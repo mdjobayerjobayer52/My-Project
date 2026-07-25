@@ -1,15 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HTML test code</title>
-
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobayer - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<script src="script.js"></script>
+  <!-- 1️⃣ Header -->
+  <header>
+    <div class="logo">Jobayer</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- 2️⃣ About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <h3>Hello, I am Jobayer</h3>
+      <p><strong>What am I learning?:</strong> I am currently learning web development (HTML, CSS, JavaScript).</p>
+      <p><strong>My Goal:</strong> To become a skilled Full-Stack Web Developer and create excellent web applications.</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- 3️⃣ Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- 4️⃣ Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-container">
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="আপনার পুরো নাম লিখুন">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="@email.com">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="017XXXXXXXX">
+        </div>
+
+        <div class="form-group">
+          <label for="division">Division</label>
+          <select id="division" name="division">
+            <option value="" disabled selected>বিভাগ নির্বাচন করুন</option>
+            <option value="dhaka">ঢাকা</option>
+            <option value="chittagong">চট্টগ্রাম</option>
+            <option value="rajshahi">রাজশাহী</option>
+            <option value="khulna">খুলনা</option>
+            <option value="barisal">বরিশাল</option>
+            <option value="sylhet">সিলেট</option>
+            <option value="rangpur">রংপুর</option>
+            <option value="mymensingh">ময়মনসিংহ</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="আপনার বার্তাটি লিখুন..."></textarea>
+        </div>
+
+        <button type="submit">Contact Us</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
