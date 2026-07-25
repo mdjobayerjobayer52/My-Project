@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jobayer - Portfolio</title>
+  <title>Add homepage</title>
+  <!-- আলাদা CSS ফাইল যুক্ত করার লিংক -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,6 +14,7 @@
     <div class="logo">Jobayer</div>
     <nav>
       <ul>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -24,8 +26,9 @@
   <section id="about">
     <h2>About Me</h2>
     <div class="about-content">
-      <h3>Hello, I am Jobayer</h3>
-      <p><strong>What am I learning?:</strong> I am currently learning web development (HTML, CSS, JavaScript).</p>
+        <h3>Hello, I am [Jobayer]</h3>
+      <p><strong>What am I learning?
+:</strong> I am currently learning web development (HTML, CSS, JavaScript).</p>
       <p><strong>My Goal:</strong> To become a skilled Full-Stack Web Developer and create excellent web applications.</p>
     </div>
   </section>
@@ -50,6 +53,9 @@
   <section id="contact">
     <h2>Contact</h2>
     <div class="contact-container">
+      
+
+      <!-- Contact Form -->
       <form action="#" method="POST">
         <div class="form-group">
           <label for="fullname">Full Name</label>
@@ -58,17 +64,18 @@
 
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="@email.com">
+          <input type="email" id="email" name="email" placeholder="@email.com" >
         </div>
 
         <div class="form-group">
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" placeholder="017XXXXXXXX">
+          <input type="tel" id="phone" name="phone" placeholder="017XXXXXXXX" >
         </div>
 
+        <!-- Division Dropdown -->
         <div class="form-group">
           <label for="division">Division</label>
-          <select id="division" name="division">
+          <select id="division" name="division" >
             <option value="" disabled selected>বিভাগ নির্বাচন করুন</option>
             <option value="dhaka">ঢাকা</option>
             <option value="chittagong">চট্টগ্রাম</option>
@@ -83,11 +90,13 @@
 
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="আপনার বার্তাটি লিখুন..."></textarea>
+          <textarea id="message" name="message" rows="4" placeholder="আপনার বার্তাটি লিখুন..." ></textarea>
         </div>
 
+        <!-- Submit Button -->
         <button type="submit">Contact Us</button>
       </form>
+
     </div>
   </section>
 
