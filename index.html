@@ -1,104 +1,324 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Add homepage</title>
-  <!-- আলাদা CSS ফাইল যুক্ত করার লিংক -->
+
+  <title>My Portfolio</title>
+
+  <!-- CSS File Link -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- 1️⃣ Header -->
+  <!-- Header -->
   <header>
-    <div class="logo">Jobayer</div>
+
+    <div class="logo">
+      My Portfolio
+    </div>
+
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+
+        <li>
+          <a href="#about">About Me</a>
+        </li>
+
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact Us</a>
+        </li>
       </ul>
     </nav>
+
   </header>
 
-  <!-- 2️⃣ About Me -->
+
+  <!-- Home Section -->
+  <section id="home">
+
+    <h1>
+      Welcome to My Portfolio
+    </h1>
+
+    <p>
+      Hello! My name is Jobayer.
+      Welcome to my personal portfolio website.
+    </p>
+
+  </section>
+
+  <hr>
+
+
+  <!-- About Me Section -->
   <section id="about">
-    <h2>About Me</h2>
+
+    <h2>
+      About Me
+    </h2>
+
     <div class="about-content">
-        <h3>Hello, I am [Jobayer]</h3>
-      <p><strong>What am I learning?
-:</strong> I am currently learning web development (HTML, CSS, JavaScript).</p>
-      <p><strong>My Goal:</strong> To become a skilled Full-Stack Web Developer and create excellent web applications.</p>
+
+      <p>
+        Hello! I am Jobayer. I am learning web development
+        and building beautiful websites using HTML and CSS.
+      </p>
+
+      <br>
+
+      <p>
+        I am interested in technology, website development,
+        and learning new skills.
+      </p>
+
     </div>
+
   </section>
 
   <hr>
 
-  <!-- 3️⃣ Skills -->
+
+  <!-- Skills Section -->
   <section id="skills">
-    <h2>Skills</h2>
+
+    <h2>
+      My Skills
+    </h2>
+
     <div class="skills-list">
+
       <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
+
+        <li>
+          HTML
+        </li>
+
+        <li>
+          CSS
+        </li>
+
+        <li>
+          JavaScript
+        </li>
+
+        <li>
+          Web Design
+        </li>
+
+        <li>
+          VS Code
+        </li>
+
       </ul>
+
     </div>
+
   </section>
 
   <hr>
 
-  <!-- 4️⃣ Contact -->
+
+  <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact</h2>
+
+    <h2>
+      Contact Us
+    </h2>
+
     <div class="contact-container">
-      
+
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+
+        <p>
+          <strong>Name:</strong>
+          Jobayer
+        </p>
+
+        <p>
+          <strong>Email:</strong>
+          your-email@example.com
+        </p>
+
+        <p>
+          <strong>Phone:</strong>
+          017XXXXXXXX
+        </p>
+
+      </div>
+
 
       <!-- Contact Form -->
-      <form action="#" method="POST">
+      <!-- Formspree URL এখানে বসাতে হবে -->
+
+      <form
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+      >
+
+        <!-- Full Name -->
         <div class="form-group">
-          <label for="fullname">Full Name</label>
-          <input type="text" id="fullname" name="fullname" placeholder="আপনার পুরো নাম লিখুন">
+
+          <label for="fullname">
+            Full Name
+          </label>
+
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="আপনার পুরো নাম লিখুন"
+            required
+          >
+
         </div>
 
+
+        <!-- Email -->
         <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="@email.com" >
+
+          <label for="email">
+            Email
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+            required
+          >
+
         </div>
 
+
+        <!-- Phone Number -->
         <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" placeholder="017XXXXXXXX" >
+
+          <label for="phone">
+            Phone Number
+          </label>
+
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="017XXXXXXXX"
+            required
+          >
+
         </div>
 
-        <!-- Division Dropdown -->
+
+        <!-- Division -->
         <div class="form-group">
-          <label for="division">Division</label>
-          <select id="division" name="division" >
-            <option value="" disabled selected>বিভাগ নির্বাচন করুন</option>
-            <option value="dhaka">ঢাকা</option>
-            <option value="chittagong">চট্টগ্রাম</option>
-            <option value="rajshahi">রাজশাহী</option>
-            <option value="khulna">খুলনা</option>
-            <option value="barisal">বরিশাল</option>
-            <option value="sylhet">সিলেট</option>
-            <option value="rangpur">রংপুর</option>
-            <option value="mymensingh">ময়মনসিংহ</option>
+
+          <label for="division">
+            Division
+          </label>
+
+          <select
+            id="division"
+            name="division"
+            required
+          >
+
+            <option
+              value=""
+              disabled
+              selected
+            >
+              বিভাগ নির্বাচন করুন
+            </option>
+
+            <option value="Dhaka">
+              ঢাকা
+            </option>
+
+            <option value="Chittagong">
+              চট্টগ্রাম
+            </option>
+
+            <option value="Rajshahi">
+              রাজশাহী
+            </option>
+
+            <option value="Khulna">
+              খুলনা
+            </option>
+
+            <option value="Barisal">
+              বরিশাল
+            </option>
+
+            <option value="Sylhet">
+              সিলেট
+            </option>
+
+            <option value="Rangpur">
+              রংপুর
+            </option>
+
+            <option value="Mymensingh">
+              ময়মনসিংহ
+            </option>
+
           </select>
+
         </div>
 
+
+        <!-- Message -->
         <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="আপনার বার্তাটি লিখুন..." ></textarea>
+
+          <label for="message">
+            Message
+          </label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="আপনার বার্তাটি লিখুন..."
+            required
+          ></textarea>
+
         </div>
+
 
         <!-- Submit Button -->
-        <button type="submit">Contact Us</button>
+        <button type="submit">
+          Contact Us
+        </button>
+
       </form>
 
     </div>
+
   </section>
 
+
+  <!-- Footer -->
+  <footer>
+
+    <p>
+      © 2026 My Portfolio. All Rights Reserved.
+    </p>
+
+  </footer>
+
+
 </body>
+
 </html>
