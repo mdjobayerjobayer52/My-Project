@@ -21,7 +21,7 @@
 
   <!-- Top Notice Banner -->
   <div class="notice-bar">
-    <marquee behavior="scroll" direction="left">🔥 আজকের অর্ডারে বিশেষ ছাড়! সারা বাংলাদেশে দ্রুত হোম ডেলিভারি দেওয়া হয়। 🔥</marquee>
+    <marquee behavior="scroll" direction="left">🔥 আজকের অর্ডারে বিশেষ ছাড়! সারা বাংলাদেশে দ্রুত হোম ডেলিভারি দেওয়া হয়। 🔥</marquee>
   </div>
 
   <!-- 1. Welcome Section -->
@@ -38,7 +38,7 @@
       
       <div class="form-group">
         <label for="name">গ্রাহকের নাম (Customer Name):</label>
-        <input type="text" id="name" name="name" placeholder="আপনার নাম লিখুন" required>
+        <input type="text" id="name" name="name" placeholder="আপনার নাম লিখুন / Enter your name" required>
       </div>
 
       <div class="form-group">
@@ -62,11 +62,11 @@
         <input type="number" id="quantity" name="quantity" min="1" value="1" required>
       </div>
 
-      <!-- Division Selection Option -->
+      <!-- Division Selection Option (Bangla & English) -->
       <div class="form-group">
-        <label for="division">বিভাগ সিলেক্ট করুন (Select Division):</label>
+        <label for="division">বিভাগ নির্বাচন করুন (Select Division):</label>
         <select id="division" name="division" required>
-          <option value="" disabled selected>আপনার বিভাগ নির্বাচন করুন</option>
+          <option value="" disabled selected>আপনার বিভাগ নির্বাচন করুন (Select your division)</option>
           <option value="Dhaka">ঢাকা (Dhaka)</option>
           <option value="Chattogram">চট্টগ্রাম (Chattogram)</option>
           <option value="Rajshahi">রাজশাহী (Rajshahi)</option>
@@ -78,91 +78,100 @@
         </select>
       </div>
 
-      <!-- District Selection Option (64 Districts) -->
+      <!-- District Selection Option (Bangla & English - 64 Districts) -->
       <div class="form-group">
-        <label for="district">জেলা সিলেক্ট করুন (Select District):</label>
+        <label for="district">জেলা নির্বাচন করুন (Select District):</label>
         <select id="district" name="district" required>
-          <option value="" disabled selected>আপনার জেলা নির্বাচন করুন</option>
+          <option value="" disabled selected>আপনার জেলা নির্বাচন করুন (Select your district)</option>
+          
           <!-- Dhaka Division -->
-          <option value="Dhaka">ঢাকা</option>
-          <option value="Gazipur">গাজীপুর</option>
-          <option value="Kishoreganj">কিশোরগঞ্জ</option>
-          <option value="Manikganj">মানিকগঞ্জ</option>
-          <option value="Munshiganj">মুন্সিগঞ্জ</option>
-          <option value="Narayanganj">নারায়ণগঞ্জ</option>
-          <option value="Narsingdi">নরসিংদী</option>
-          <option value="Faridpur">ফরিদপুর</option>
-          <option value="Gopalganj">গোপালগঞ্জ</option>
-          <option value="Madaripur">মাদারীপুর</option>
-          <option value="Rajbari">রাজবাড়ী</option>
-          <option value="Shariatpur">শরীয়তপুর</option>
+          <option value="Dhaka">ঢাকা (Dhaka)</option>
+          <option value="Gazipur">গাজীপুর (Gazipur)</option>
+          <option value="Kishoreganj">কিশোরগঞ্জ (Kishoreganj)</option>
+          <option value="Manikganj">মানিকগঞ্জ (Manikganj)</option>
+          <option value="Munshiganj">মুন্সিগঞ্জ (Munshiganj)</option>
+          <option value="Narayanganj">নারায়ণগঞ্জ (Narayanganj)</option>
+          <option value="Narsingdi">নরসিংদী (Narsingdi)</option>
+          <option value="Faridpur">ফরিদপুর (Faridpur)</option>
+          <option value="Gopalganj">গোপালগঞ্জ (Gopalganj)</option>
+          <option value="Madaripur">মাদারীপুর (Madaripur)</option>
+          <option value="Rajbari">রাজবাড়ী (Rajbari)</option>
+          <option value="Shariatpur">শরীয়তপুর (Shariatpur)</option>
+          
           <!-- Chattogram Division -->
-          <option value="Chattogram">চট্টগ্রাম</option>
-          <option value="Cox's Bazar">কক্সবাজার</option>
-          <option value="Bandarban">বান্দরবান</option>
-          <option value="Khagrachhari">খাগড়াছড়ি</option>
-          <option value="Rangamati">রাঙ্গামাটি</option>
-          <option value="Noakhali">নোয়াখালী</option>
-          <option value="Feni">ফেনী</option>
-          <option value="Lakshmipur">লক্ষ্মীপুর</option>
-          <option value="Cumilla">কুমিল্লা</option>
-          <option value="Brahmanbaria">ব্রাহ্মণবাড়িয়া</option>
-          <option value="Chandpur">চাঁদপুর</option>
+          <option value="Chattogram">চট্টগ্রাম (Chattogram)</option>
+          <option value="Cox's Bazar">কক্সবাজার (Cox's Bazar)</option>
+          <option value="Bandarban">বান্দরবান (Bandarban)</option>
+          <option value="Khagrachhari">খাগড়াছড়ি (Khagrachhari)</option>
+          <option value="Rangamati">রাঙ্গামাটি (Rangamati)</option>
+          <option value="Noakhali">নোয়াখালী (Noakhali)</option>
+          <option value="Feni">ফেনী (Feni)</option>
+          <option value="Lakshmipur">লক্ষ্মীপুর (Lakshmipur)</option>
+          <option value="Cumilla">কুমিল্লা (Cumilla)</option>
+          <option value="Brahmanbaria">ব্রাহ্মণবাড়িয়া (Brahmanbaria)</option>
+          <option value="Chandpur">চাঁদপুর (Chandpur)</option>
+          
           <!-- Rajshahi Division -->
-          <option value="Rajshahi">রাজশাহী</option>
-          <option value="Natore">নাটোর</option>
-          <option value="Naogaon">নওগাঁ</option>
-          <option value="Nawabganj">চাঁপাইনবাবগঞ্জ</option>
-          <option value="Pabna">পাবনা</option>
-          <option value="Sirajganj">সিরাজগঞ্জ</option>
-          <option value="Bogura">বগুড়া</option>
-          <option value="Joypurhat">জয়পুরহাট</option>
+          <option value="Rajshahi">রাজশাহী (Rajshahi)</option>
+          <option value="Natore">নাটোর (Natore)</option>
+          <option value="Naogaon">নওগাঁ (Naogaon)</option>
+          <option value="Nawabganj">চাঁপাইনবাবগঞ্জ (Chapainawabganj)</option>
+          <option value="Pabna">পাবনা (Pabna)</option>
+          <option value="Sirajganj">সিরাজগঞ্জ (Sirajganj)</option>
+          <option value="Bogura">বগুড়া (Bogura)</option>
+          <option value="Joypurhat">জয়পুরহাট (Joypurhat)</option>
+          
           <!-- Khulna Division -->
-          <option value="Khulna">খুলনা</option>
-          <option value="Bagerhat">বাগেরহাট</option>
-          <option value="Satkhira">সাতক্ষীরা</option>
-          <option value="Jashore">যশোর</option>
-          <option value="Magura">মাগুরা</option>
-          <option value="Jhenaidah">ঝিনাইদহ</option>
-          <option value="Narail">নড়াইল</option>
-          <option value="Kushtia">কুষ্টিয়া</option>
-          <option value="Meherpur">মেহেরপুর</option>
-          <option value="Chuadanga">চুয়াডাঙ্গা</option>
+          <option value="Khulna">খুলনা (Khulna)</option>
+          <option value="Bagerhat">বাগেরহাট (Bagerhat)</option>
+          <option value="Satkhira">সাতক্ষীরা (Satkhira)</option>
+          <option value="Jashore">যশোর (Jashore)</option>
+          <option value="Magura">মাগুরা (Magura)</option>
+          <option value="Jhenaidah">ঝিনাইদহ (Jhenaidah)</option>
+          <option value="Narail">নড়াইল (Narail)</option>
+          <option value="Kushtia">কুষ্টিয়া (Kushtia)</option>
+          <option value="Meherpur">মেহেরপুর (Meherpur)</option>
+          <option value="Chuadanga">চুয়াডাঙ্গা (Chuadanga)</option>
+          
           <!-- Barishal Division -->
-          <option value="Barishal">বরিশাল</option>
-          <option value="Bhola">ভোলা</option>
-          <option value="Jhalokati">ঝালকাঠি</option>
-          <option value="Patuakhali">পটুয়াখালী</option>
-          <option value="Pirojpur">পিরোজপুর</option>
-          <option value="Barguna">বরগুনা</option>
+          <option value="Barishal">বরিশাল (Barishal)</option>
+          <option value="Bhola">ভোলা (Bhola)</option>
+          <option value="Jhalokati">ঝালকাঠি (Jhalokati)</option>
+          <option value="Patuakhali">পটুয়াখালী (Patuakhali)</option>
+          <option value="Pirojpur">পিরোজপুর (Pirojpur)</option>
+          <option value="Barguna">বরগুনা (Barguna)</option>
+          
           <!-- Sylhet Division -->
-          <option value="Sylhet">সিলেট</option>
-          <option value="Moulvibazar">মৌলভীবাজার</option>
-          <option value="Habiganj">হবিগঞ্জ</option>
-          <option value="Sunamganj">সুনামগঞ্জ</option>
+          <option value="Sylhet">সিলেট (Sylhet)</option>
+          <option value="Moulvibazar">মৌলভীবাজার (Moulvibazar)</option>
+          <option value="Habiganj">হবিগঞ্জ (Habiganj)</option>
+          <option value="Sunamganj">সুনামগঞ্জ (Sunamganj)</option>
+          
           <!-- Rangpur Division -->
-          <option value="Rangpur">রংপুর</option>
-          <option value="Gaibandha">গাইবান্ধা</option>
-          <option value="Kurigram">কুড়িগ্রাম</option>
-          <option value="Nilphamari">নীলফামারী</option>
-          <option value="Lalmonirhat">লালমনিরহাট</option>
-          <option value="Dinajpur">দিনাজপুর</option>
-          <option value="Thakurgaon">ঠাকুরগাঁও</option>
-          <option value="Panchagarh">পঞ্চগড়</option>
+          <option value="Rangpur">রংপুর (Rangpur)</option>
+          <option value="Gaibandha">গাইবান্ধা (Gaibandha)</option>
+          <option value="Kurigram">কুড়িগ্রাম (Kurigram)</option>
+          <option value="Nilphamari">নীলফামারী (Nilphamari)</option>
+          <option value="Lalmonirhat">লালমনিরহাট (Lalmonirhat)</option>
+          <option value="Dinajpur">দিনাজপুর (Dinajpur)</option>
+          <option value="Thakurgaon">ঠাকুরগাঁও (Thakurgaon)</option>
+          <option value="Panchagarh">পঞ্চগড় (Panchagarh)</option>
+          
           <!-- Mymensingh Division -->
-          <option value="Mymensingh">ময়মনসিংহ</option>
-          <option value="Jamalpur">জামালপুর</option>
-          <option value="Netrokona">নেত্রকোণা</option>
-          <option value="Sherpur">শেরপুর</option>
+          <option value="Mymensingh">ময়মনসিংহ (Mymensingh)</option>
+          <option value="Jamalpur">জামালপুর (Jamalpur)</option>
+          <option value="Netrokona">নেত্রকোণা (Netrokona)</option>
+          <option value="Sherpur">শেরপুর (Sherpur)</option>
         </select>
       </div>
 
-      <!-- Delivery Area Option -->
+      <!-- Delivery Area Option (Bangla & English) -->
       <div class="form-group">
         <label for="delivery">ডেলিভারি এলাকা (Delivery Area):</label>
         <select id="delivery" name="delivery" required>
-          <option value="Dhaka Inside">ঢাকার ভেতরে (৳80)</option>
-          <option value="Dhaka Outside">ঢাকার বাইরে (৳150)</option>
+          <option value="" disabled selected>ডেলিভারি এলাকা নির্বাচন করুন (Select delivery area)</option>
+          <option value="Inside Dhaka">ঢাকার ভেতরে / Inside Dhaka (৳80)</option>
+          <option value="Outside Dhaka">ঢাকার বাইরে / Outside Dhaka (৳150)</option>
         </select>
       </div>
 
@@ -170,15 +179,15 @@
       <div class="form-group">
         <label for="payment">পেমেন্ট মেথড (Payment Method):</label>
         <select id="payment" name="payment" required>
-          <option value="Cash on Delivery">ক্যাশ অন ডেলিভারি (পণ্য পেয়ে টাকা দিন)</option>
-          <option value="bKash">বিকাশ (bKash)</option>
-          <option value="Nagad">নগদ (Nagad)</option>
+          <option value="Cash on Delivery">ক্যাশ অন ডেলিভারি / Cash on Delivery (পণ্য পেয়ে টাকা দিন)</option>
+          <option value="bKash">বিকাশ / bKash</option>
+          <option value="Nagad">নগদ / Nagad</option>
         </select>
       </div>
 
       <div class="form-group">
         <label for="address">সম্পূর্ণ ঠিকানা (Delivery Address):</label>
-        <textarea id="address" name="address" rows="3" placeholder="থানা, ইউনিয়ন/ওয়ার্ড এবং বাসার নম্বর বা পূর্ণ ঠিকানা লিখুন" required></textarea>
+        <textarea id="address" name="address" rows="3" placeholder="থানা, ইউনিয়ন/ওয়ার্ড এবং বাসার নম্বর বা পূর্ণ ঠিকানা লিখুন" required></textarea>
       </div>
 
       <button type="submit" class="submit-btn">অর্ডার কনফার্ম করুন</button>
@@ -189,7 +198,7 @@
   <div id="successModal" class="modal">
     <div class="modal-content">
       <div class="icon-box">✓</div>
-      <h2>ধন্যবাদ! আপনার অর্ডারটি সফল হয়েছে।</h2>
+      <h2>ধন্যবাদ! আপনার অর্ডারটি সফল হয়েছে।</h2>
       <p>আমরা খুব শীঘ্রই কল করে আপনার অর্ডারটি কনফার্ম করব।</p>
       <button onclick="closeModal()" class="close-btn">ঠিক আছে</button>
     </div>
@@ -229,7 +238,7 @@
       const productName = document.getElementById('product').value;
 
       // SMS Text Template
-      const smsText = `প্রিয় ${customerName}, Dokan Online-এ আপনার "${productName}" পণ্যটির অর্ডার সফল হয়েছে। আমরা শীঘ্রই কল করব।`;
+      const smsText = `প্রিয় ${customerName}, Dokan Online-এ আপনার "${productName}" পণ্যটির অর্ডার সফল হয়েছে। আমরা শীঘ্রই কল করব।`;
 
       // Optional SMS API Key (e.g. Greenweb API Key)
       const apiKey = "YOUR_GREENWEB_API_KEY"; 
